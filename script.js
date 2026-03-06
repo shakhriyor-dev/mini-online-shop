@@ -2,18 +2,15 @@
 let products = [
 {
 name: "Laptop",
-price: 800,
-image: "images/laptop.jpg"
+price: 800
 },
 {
 name: "Phone",
-price: 500,
-image: "images/phone.jpg"
+price: 500
 },
 {
 name: "Headphones",
-price: 100,
-image: "images/headphones.jpg"
+price: 100
 }
 ];
 
@@ -29,10 +26,7 @@ productContainer.innerHTML += `
 <div class="col-md-4 mb-4">
 <div class="card p-3">
 
-<img src="${product.image}" class="card-img-top">
-
 <h4 class="mt-2">${product.name}</h4>
-
 <p>$${product.price}</p>
 
 <button onclick="addToCart(${index})"
