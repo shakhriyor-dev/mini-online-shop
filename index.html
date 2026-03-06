@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Online Shop</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Online Shop</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-mode">
 
-<h1 style="text-align: center;">Mini Online Do'kon</h1>
+<header>
+    <h1>Mini Online Shop 🛒</h1>
+    <button id="theme-toggle">🌙 Tungi rejim</button>
+</header>
 
 <div class="container">
-    <div class="products-grid" id="products">
+    <main class="products-grid" id="products">
         <!-- Mahsulotlar JS orqali chiqariladi -->
-    </div>
+    </main>
 
-    <div class="cart-section">
+    <aside class="cart-section sidebar" id="cart-section">
         <h3>Savatcha 🛒</h3>
         <div id="cart-items">
             <p>Savatcha bo'sh</p>
@@ -23,7 +26,7 @@
         <hr>
         <h4>Jami: $<span id="total-price">0</span></h4>
         <button class="btn-clear" onclick="clearCart()">Tozalash</button>
-    </div>
+    </aside>
 </div>
 
 <script src="script.js"></script>
